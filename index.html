@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="PORTFOLIO/logo.png.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+       </ul> </nav>
+        <div class="header-text">
+            <p>SY Bsc CS Student</p>
+            <h1>Hi,<br> I'm <span>Rohit Suryawanshi </span><br>from Pune</h1>
+
+        </div>
+</div> 
+</div> 
+<!-- About Section --> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="PORTFOLIO/rohitimage1.png">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Passionate Computer Science student with a unique blend of 
+                technical expertise and creative problem-solving skills. Skilled 
+                in programming fundamentals, Cinematic video editing, and client 
+                relationship management. A fast learner with a growth mindset, 
+                dedicated to delivering innovative solutions and continuously expanding my 
+                skills in the tech industry.</p>
+               <br><div class="tab-titles">
+                    <P class="tab-links active-link"onclick="opentab('skills')">Skills</P>
+                    <P class="tab-links"onclick="opentab('experience')">Experience</P>
+                    <P class="tab-links"onclick="opentab('education')">Education</P>
+                </div>
+               <br> <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming & Software Development</span><br>Building 
+                            efficient and scalable software solutions.</li>
+                        <li><span>Video Editing & Cinematic Production</span><br>Creating 
+                            visually compelling content with cinematic techniques.</li>
+                        <li><span>Client Relationship Management</span><br>Building and maintaining
+                             strong clients relationships.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Freelance Video Editor</span><br>2+ years of editing experience</li>
+                        <li><span>Software Development</span><br>Built academic and personal 
+                            coding projects</li>
+                        <li><span>Web Development</span><br>Developed responsive websites
+                             using HTML, CSS, and Javascript.</li>
+                        <li><span>Client Handling</span><br>Managed customer communication
+                             and project delivery.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bsc Computer Science</span><br>Pursuing (Second Year) from Raisoni College.</li>
+                        <li><span>Higher Secondry(HSC)</span><br>Completed 12th from Chate JR college of science(2023).</li>
+                        <li><span>Secondary School(SSC)</span><br>Completed 10th from Chate School</li>
+                    </ul></div></div></div></div></div>
+<!------/*----My Services Section----*/------->
+<article id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Development</h2>
+                <p>Creating responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-clapperboard"></i>
+                <h2>Video Editing</h2>
+                <p>Editing videos with cinematic techniques to create visually compelling content.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-handshake"></i>
+                <h2>Client Handling</h2>
+                <p>Managed client communication and project delivery effectively.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-------/* Portfolio Section */--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="PORTFOLIO/coding.png">
+                    <div class="layer">
+                        <h3>Basic Web Development</h3>
+                        <p>Build responsive websites using HTML, CSS, and javascript with clean
+                             and user friendly designs.</p>
+                    </div>
+                </div>
+            <div class="work">
+                <img src="PORTFOLIO/videoeditingimage.png">
+                <div class="layer">
+                    <h3> Professional Video Editing</h3>
+                    <p>Create professional cinematic videos 
+                        with smooth transitions, color grading, sound design, and storytelling.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="PORTFOLIO/customers.png">
+                <div class="layer">
+                    <h3>Client Handling</h3>
+                    <p>Manage clients projects from inquiry to final delivery while 
+                        maintaining clear communication and meeting deadlines.</p>
+        </div>
+        </div></div></div></div></article>
+<a href="#" class="btn">View More</a>
+</div>
+<!--------------contact Section---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Connect With Me</h1><br>
+            <p><i class="fa-regular fa-envelope"></i>rohitgsuryawanshi11@gmail.com</p>
+            <p><i class="fa-brands fa-whatsapp"></i>+91 7378789868</p>
+            <div class="social-icons"> 
+                <a href="https://www.instagram.com/rohits.1211?utm_source=qr&igsh=NnIxdTIzYzg2Zzjm"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rohit-suryawanshi-36567b2a4?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://www.facebook.com/share/1DPYQdgkNT"><i class="fa-brands fa-facebook"></i></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                
+            </div>
+        <a href="PORTFOLIO/RohitResume.docx" download class="btn btn2">Download CV </a>
+        </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheets">  
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Write your message here..." required></textarea>
+                    <button type="submit" class="btn btn2" id="submitBtn">
+    Send Message
+</button>
+
+<span id="msg"></span>
+
+                </form>
+            </div></div></div></div>
+        </div>
+        <div class="Copyright">
+    <p>Copyright © 2026 Rohit Suryawanshi | Coded & Created with <i class="fa-solid fa-heart"></i> from Pune</p>
+
+    </div>
+    </div>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0px";
+}
+
+function closemenu() {
+    sidemenu.style.right = "-250px";
+}
+</script>
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxRcYuqnaHlAuxHdHS9DDcBYTWWBo9oIckjbpKKCQ6KeN5NAU3-tO__4Z50N0NcOgYE/exec';
+
+const form = document.forms['submit-to-google-sheets'];
+const msg = document.getElementById("msg");
+const submitBtn = document.getElementById("submitBtn");
+
+form.addEventListener('submit', e => {
+
+    e.preventDefault();
+
+    submitBtn.innerHTML = "Sending...";
+    submitBtn.disabled = true;
+
+    fetch(scriptURL,{
+        method:'POST',
+        body:new FormData(form)
+    })
+
+    .then(response => {
+
+        msg.innerHTML = "Message sent successfully!";
+
+        submitBtn.innerHTML = "Send Message";
+        submitBtn.disabled = false;
+
+        form.reset();
+
+        setTimeout(function(){
+            msg.innerHTML = "";
+        },5000);
+
+    })
+
+    .catch(error => {
+
+        msg.innerHTML = "Something went wrong.";
+
+        submitBtn.innerHTML = "Send Message";
+        submitBtn.disabled = false;
+
+    });
+});
+</script>
+</body>
+</html>
